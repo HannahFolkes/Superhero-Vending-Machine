@@ -11,7 +11,7 @@ print("Main Menu:\n"
 menu_option = input("Please select an option from the main menu (1-4): ")
 print()
 
-# SUPERHERO ARRAYS
+# SUPHERO ARRAYS
 marvel_superheroes = ["Iron Man", "Captain America", "Thor", "Hulk", "Black Widow", "Spider-Man"]
 dc_superheroes = ["Superman", "Batman", "Wonder Woman", "The Flash", "Aquaman", "Green Lantern"]
 
@@ -24,10 +24,24 @@ while (menu_option != "4"):
         print("Now dispensing your Marvel superhero plushie...")
         print()
         print("You have selected option " + marvel_plushie + " from the Marvel Merchandise Collection.")
-        #PLAYING ANOTHER ROUND OPTION
-        return_option = input("Would you like to return to the main menu or exit the program? Type 'yes' to return to the main menu or 'no' to exit: ")
-        return_option = return_option.lower()
-        break; 
+        print()
+
+        #BUYING ANOTHER MARVEL PLUSHIE OPTION/RETURNING BACK TO MAIN MENU
+        second_Marvel = int(input("Would you like to:\n 1. Buy Another Plushie from the Marvel Merchandise Collection\n 2. Return Back to the Main Menu\n 3. Exit.\n Enter your choice (1-3): ")) 
+        if second_Marvel == 1:
+            menu_option == 1
+        elif second_Marvel == 2: 
+            print()
+            print("Main Menu:\n" 
+                  "1. Buy Marvel Merchandise\n" 
+                  "2. Buy DC Merchandise\n" 
+                  "3. Create your own superhero plushie\n" 
+                  "4. Exit")
+            menu_option = input("Please select an option from the main menu (1-4): ")
+            print()
+        else: 
+            menu_option = 4 #QUITTING THE PROGRAM
+                              
     elif menu_option == "2": #DC MERCHANDISE COLLECTION
          print("Congratulations! You have selected to buy a plushie from the DC Merchandise Collection!")
          print("Please select a DC superhero plushie from the following options:\n 1. Superman\n 2. Batman\n 3. Wonder Woman\n 4. The Flash\n 5. Aquaman\n 6. Green Lantern")
@@ -35,10 +49,24 @@ while (menu_option != "4"):
          print("Now dispensing your DC superhero plushie...")
          print()
          print("You have selected option " + dc_plushie + " from the DC Merchandise Collection.")
-        #PLAYING ANOTHER ROUND OPTION
-         return_option = input("Would you like to return to the main menu or exit the program? Type 'yes' to return to the main menu or 'no' to exit: ")
-         return_option = return_option.lower()
-         break;  
+         print()
+
+         #BUYING ANOTHER DC PLUSHIE OPTION/RETURNING BACK TO MAIN MENU
+         second_DC = int(input("Would you like to:\n 1. Buy Another Plushie from the DC Superhero Merchandise Collection\n 2. Return Back to the Main Menu\n 3. Exit\n Enter your choice(1-3): ")) 
+         if second_DC == 1:
+             menu_option == 2
+         elif second_DC == 2:
+             print()
+             print("Main Menu:\n" 
+                   "1. Buy Marvel Merchandise\n" 
+                   "2. Buy DC Merchandise\n" 
+                   "3. Create your own superhero plushie\n" 
+                   "4. Exit")
+             menu_option = input("Please select an option from the main menu (1-4): ")
+             print()
+         else:
+             menu_option == 4 #QUITTING THE PROGRAM
+
     elif menu_option == "3":#CREATE YOUR OWN SUPERHERO PLUSHIE
         print("You have chosen to create your own superhero plushie!")
         myPlushie_name = input("Please enter the name of your superhero plushie: ") #PERSONAL PLUSHIE NAME 
@@ -47,10 +75,24 @@ while (menu_option != "4"):
         print("Now dispensing your custom superhero plushie...")
         print()
         print("You have created a custom superhero plushie with the following attributes:\nName: " + myPlushie_name +" \nGender: " + myPlushie_gender + "\nElemental Superpower: " + myPlushie_power + "\nEnjoy your new superhero plushie!")
-        #PLAYING ANOTHER ROUND OPTION
-        return_option = input("Would you like to return to the main menu or exit the program? Type 'yes' to return to the main menu or 'no' to exit: ")
-        return_option = return_option.lower()
-        break;              
+        print()
+
+    #CREATE YOUR OWN SUPERHERO PLUSHIE OPTION/RETURNING BACK TO MAIN MENU
+        second_myPlushie = int(input("Would you like to:\n 1. Create another custom plushie\n 2. Return Back to the Main Menu\n 3. Exit\n Enter your choice(1-3): ")) 
+        if second_myPlushie == 1:
+            menu_option == 3
+        elif second_myPlushie == 2:
+            print()
+            print("Main Menu:\n" 
+                  "1. Buy Marvel Merchandise\n" 
+                  "2. Buy DC Merchandise\n" 
+                  "3. Create your own superhero plushie\n" 
+                  "4. Exit")
+            menu_option = input("Please select an option from the main menu (1-4): ")
+            print()
+        else:
+            menu_option == 4 #QUITTING THE PROGRAM
+
     elif menu_option == "4":#EXITING THE PROGRAM
      print("GAME OVER!")
      print("Thanks for playing the Morden Day Superhero Vending Machines! We hope you enjoyed your experience and look forward to seeing you again soon!")
