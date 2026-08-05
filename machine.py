@@ -11,7 +11,7 @@ print("Main Menu:\n"
 menu_option = input("Please select an option from the main menu (1-4): ")
 print()
 
-# SUPHERO ARRAYS
+# SUPERHERO ARRAYS
 marvel_superheroes = ["Iron Man", "Captain America", "Thor", "Hulk", "Black Widow", "Spider-Man"]
 dc_superheroes = ["Superman", "Batman", "Wonder Woman", "The Flash", "Aquaman", "Green Lantern"]
 
